@@ -27,7 +27,7 @@ const FieldItem = React.forwardRef(({ field, index, register, remove, setValue, 
                     value={currentType || ""}
                     onValueChange={(value) => setValue(fieldType, value)}
                 >
-                    <SelectTrigger>
+                    <SelectTrigger className="w-[150px]">
                         <SelectValue placeholder="Select type" />
                     </SelectTrigger>
                     <SelectContent>
@@ -35,6 +35,10 @@ const FieldItem = React.forwardRef(({ field, index, register, remove, setValue, 
                         <SelectItem value="number">Number</SelectItem>
                         <SelectItem value="boolean">Boolean</SelectItem>
                         <SelectItem value="nested">Nested</SelectItem>
+                        <SelectItem value="date">Date</SelectItem>
+                        <SelectItem value="enum">Enum</SelectItem>
+                        <SelectItem value="null">Null</SelectItem>
+                        <SelectItem value="undefined">Undefined</SelectItem>
                     </SelectContent>
                 </Select>
 

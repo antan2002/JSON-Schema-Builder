@@ -33,7 +33,7 @@ function NestedFields({ parentIndex, register, setValue, watch }) {
             <Button
                 variant="outline"
                 size="sm"
-                onClick={() => append({ key: "", type: 'string' })}
+                onClick={() => append({ key: "", type: "" })}
             >
                 Add Nested Field
             </Button>

@@ -20,7 +20,7 @@ const SchemaBuilder = () => {
     const addNewField = () => {
         append({
             key: "",
-            type: 'string'
+            type: ""
         });
     };
 
